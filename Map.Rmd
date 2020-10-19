@@ -1,0 +1,23 @@
+---
+title: "Map and Date"
+date: "10/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+```
+
+## Introduction
+This website is being created for the project submission of Developing of Data Products (Coursera).
+Instruction given: Create a web page using R markdown that has a map (using libarry leaflet) and a date.
+
+```{r}
+my_map <- leaflet() %>%
+        addTiles
+
+my_map <- my_map %>%
+        addMarkers(lat=27.1751, lng=78.0421,
+                   popup="The Taj Mahal-One of the Seven Wonders of the World")
+my_map
+```
