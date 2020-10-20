@@ -18,6 +18,6 @@ my_map <- leaflet() %>%
 
 my_map <- my_map %>%
         addMarkers(lat=27.1751, lng=78.0421,
-                   popup="The Taj Mahal-One of the Seven Wonders of the World")
+                   popup="The Taj Mahal by Shah Jahan")
 my_map
 ```
